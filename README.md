@@ -1,6 +1,8 @@
 csvt (中谷教育)的django 教程
 ========================
 
+地址在此！[push me](http://www.pythoner.cn/course/topic/django-web-development/)
+
 记录下 每个文件夹的功能 
 
 csvt01  变量 标签等 基础的东西
