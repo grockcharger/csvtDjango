@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>show_authors</title>
+</head>
+<body>
+
+{% for book in books %}
+<div>
+
+	<h3>{{ book.name }}</h3>
+	{% for author in book.authors.all %}
+		<li>{{ author }}</li>
+	{% endfor %}
+
+</div>
+{% endfor %}
+
+</body>
+</html>

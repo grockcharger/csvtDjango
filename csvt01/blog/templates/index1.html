@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>{{ title }}</title>
+</head>
+
+<body>
+<!-- <h1>hello, {{ user.name }}</h1>
+<li>age:{{ user.age }}</li>
+<li>sex:{{ user.sex }}</li>
+
+<div>the {{ user.name }} say : {{ user.say}}</div>
+
+<li>{{ book_list.0 }}</li>
+<li>{{ book_list.1 }}</li>
+<li>{{ book_list.2 }}</li>
+<li>{{ book_list.3 }}</li> -->
+
+{% if user %}
+	<li>name : {{ user.name }}</li>
+	<li>sex : {{ user.age }}</li>
+	<li>age : {{ user.age }}</li>
+{% else %}
+	
+	user not exist
+
+{% endif %}
+
+
+{% for book in book_list %}
+	<li>{{ book }}</li>
+{% endfor %}
+
+{% for k,v in user.items %}
+	<li>{{ forloop.counter }}:{{ k }}-->{{ v }}</li>
+	<li>{{ forloop.revcounter }}:{{ k }}-->{{ v }}</li>
+{% empty %}
+	<li>nonononono</li>
+{% endfor %}
+</body>
+</html>
